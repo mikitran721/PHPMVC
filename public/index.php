@@ -1,12 +1,7 @@
 <?php
  require_once('../app/config/config.php');
+require_once APP_ROOT.'/app/controllers/HomeController.php';
 
-//  test
-require_once APP_ROOT.'/app/services/PatientService.php';
-$patientService = new PatientService();
-$patients = $patientService->getAllPatients();
-
-echo "<pre>";
-print_r($patients);
-echo "</pre>"
+$homeController = new HomeController();
+$homeController->index();
 ?>
