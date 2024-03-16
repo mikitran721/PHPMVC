@@ -20,11 +20,27 @@ class Patient{
         $this->mobile = $mobile;
     }
 
-    // GETTERS/SETTER
+    // GETTERS
+    public function getId(){
+        return $this->id;
+    }
+
     public function getFullname(){
         return $this->fullname;
     }
-
+    public function getGender(){
+        return $this->gender;
+    }
+    public function getDateOfBirth(){
+        return $this->dateOfBirth;
+    }
+    public function getAddress(){
+        return $this->address;
+    }
+    public function getMobile(){
+        return $this->mobile;
+    }
+    //SETTER
     public function setFullname($fullname){
         $this->fullname=$fullname;
     }
